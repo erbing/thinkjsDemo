@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this is ForEach page</title>
+</head>
+<body>
+        
+    <h2><%=name %></h2>    
+    <form>
+        <input type='text' name='username' placeholder='用户名' /> 
+        <br />
+        <input type='password' name='password' placeholder='密码'/>
+        <br />
+        <button>loginss</button>
+    </form>
+    
+    <h1>什么鬼啊</h1> 
+
+    <ul>
+        <%dataArr.forEach(function(item){%>
+        <li>
+            <%=item.artTitle%> \ 
+            <span>关键词：<%=item.artKeywords%></span>
+            <span><%=item.artContent%></span>
+        </li>
+        <%})%>
+    </ul>
+
+    <h3>当前访问的 IP 是 <%=ip %></h3>
+</body>
+</html>
