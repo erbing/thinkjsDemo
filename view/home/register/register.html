@@ -29,14 +29,15 @@
 <body>
     <div class="mianBox">
         <h2>用户注册入口</h2>
-        <form>
+        <form action="/home/register/register" method="POST">
             <input type='text' name='username' placeholder='用户名' class="inputbox"/> 
             <br />
             <input type='password' name='password' placeholder='密码' class="inputbox"/>
             <br />
-            <input type='password' name='password' placeholder='重复密码' class="inputbox"/>
-            <br />
-            <button class="btn">注册</button>
+            <!--<input type='password' name='password' placeholder='重复密码' class="inputbox"/>
+            <br />-->
+            <button class="btn"  type="submit">注册</button>
+            <h3>当前注册的 状态 是 <%=res %></h3>
         </form>
     </div>
 </body>

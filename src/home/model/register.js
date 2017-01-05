@@ -1,8 +1,8 @@
 /**
- * login model
+ * register model
  */
 export default class extends think.model.base {
-    * loginAction () {
+    * registerAction () {
         // 引入数据表
         let model = this.model("user");
         // let insertUser = yield model.add({
