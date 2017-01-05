@@ -29,13 +29,16 @@
 <body>
     <div class="mianBox">
         <h2>用户登录入口</h2>
-        <form action="/home/login/login">
+        <form action="/home/login/login" method="POST">
             <input type='text' name='username' placeholder='用户名' class="inputbox"/> 
             <br />
             <input type='password' name='password' placeholder='密码' class="inputbox"/>
             <br />
             <button class="btn" type="submit">登录</button>
         </form>
+        <h2>登录账户： <%=res %></h2>
+        <h2>登录密码： <%=psw %></h2>
+        <h2>登录状态： <%=msg %></h2>
     </div>
 </body>
 </html>
