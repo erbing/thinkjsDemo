@@ -29,8 +29,8 @@ export default class extends think.controller.base {
 
             this.assign('res', 'data.username');
             this.assign('psw', 'data.password');
-            this.assign('msg', msg);
-            console.log(msg);
+            this.assign('msg', 'msg');
+            
         }
         return this.display();
     }
